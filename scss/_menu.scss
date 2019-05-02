@@ -21,14 +21,17 @@
     transform: rotate(180deg);
 
     .btn-line {
+
       // line 1
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
+
       // line 2
       &:nth-child(2) {
         opacity: 0;
       }
+
       //line 3
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
@@ -36,6 +39,7 @@
     }
   }
 }
+
 //menu overlay
 .menu {
   position: fixed;
@@ -47,6 +51,7 @@
   &.show {
     visibility: visible;
   }
+
   &-branding,
   &-nav {
     display: flex;
@@ -58,6 +63,7 @@
     height: 100vh;
     overflow: hidden;
   }
+
   &-nav {
     margin: 0;
     padding: 0;
@@ -91,6 +97,7 @@
       border: solid 3px $secondary-color;
     }
   }
+
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeout;
@@ -99,10 +106,12 @@
       //slide in from right
       transform: translate3d(0, 0, 0);
     }
-    &.current > a {
+
+    &.current>a {
       color: $secondary-color;
     }
   }
+
   .nav-link {
     display: inline-block;
     position: relative;
@@ -114,11 +123,12 @@
     text-decoration: none;
     @include easeout;
 
-    &.hover {
+    &:hover {
       color: $secondary-color;
     }
   }
 }
+
 // delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {

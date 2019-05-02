@@ -1,10 +1,8 @@
 //wide screens
-@include mediaXl {
-}
+@include mediaXl {}
 
 // Desktops and Laptops
-@include mediaLg {
-}
+@include mediaLg {}
 
 //Tablets and small laptops
 @include mediaMd {
@@ -17,6 +15,7 @@
       margin-bottom: 1rem;
     }
   }
+
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -40,6 +39,8 @@
 
     .portrait {
       background: url("../img/portrait_small.jpg");
+      width: 150px;
+      height: 150px;
     }
   }
 }
